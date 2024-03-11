@@ -1,0 +1,233 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap')
+
+
+*,
+*::before,
+*::after{
+    padding:0;
+    margin:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family: "Poppins", sans-serif;
+    background-color: rgba(12,82,142,255);
+}
+
+.logo{
+    width: 70px;
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    padding: 0.9rem 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    font-weight: 600;
+    background-color: aliceblue;
+    padding: 10px 1.5rem;
+    border-radius: 25px;
+    color: rgba(12,82,142,255);
+    text-transform: uppercase;
+    font-size: 0.8;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+}
+
+.parallax.bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    transform: translateZ(0);
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+@keyframes whaleAnimation {
+    0% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+    50% {
+        transform: translate(-50%, -50%) scale(1.2);
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+    }
+}
+
+.parallax.trans {
+    z-index: 3;
+    position: fixed;
+    top: 40%;
+    left: 55%;
+    width: 90%; /* Adjust the width as per your design */
+    transform: translate(-50%, -50%) scale(1);
+    animation: whaleAnimation 6s infinite; /* Adjust the duration as needed */
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    opacity: 0; 
+}
+
+@keyframes fadeInFromBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+body {
+    animation: fadeInFromBottom 2s ease-in-out forwards; 
+}
+
+main {
+    position: relative;
+}
+
+.parallax {
+    position: absolute;
+    z-index: 4;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    color: black;
+    white-space: nowrap; 
+}
+
+.button {
+    font-weight: 800;
+    font-size: 2rem;
+    background-color: white;
+    color: rgba(12, 82, 142, 255);
+    border-radius: 3rem;
+    padding: 1rem 2rem;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: -30rem;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.button:hover {
+    transform: translateX(-50%) translateY(-10px);
+    color: white;
+    background-image: url('merged.gif'); /* Replace 'hover-image.jpg' with the path to your hover image */
+    background-size: cover;
+}
+
+h2 {
+    position: absolute;
+    top: 20px; /* Adjust the top distance as needed */
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: aliceblue;
+    margin: 0;
+    background-color: rgba(14, 38, 59, 0.4);
+    padding: 15px;
+    border-radius: 25px;
+    background-blend-mode: darken;
+}
+
+header ul .dropdown {
+    position: relative;
+}
+
+header ul .dropdown .dropdown-button {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 12px 16px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    cursor: pointer;
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+}
+
+header ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for a dropdown effect */
+    border-radius: 10px; /* Adjust border radius as needed */
+    top: 150%; /* Position the dropdown content below the button */
+    left: 0;
+    width: max-content; /* Set the width to max-content */
+    z-index: 1; /* Ensure the dropdown content is below the button */
+    box-sizing: border-box;
+}
+
+header ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header ul .dropdown-content a {
+    color: rgba(12, 82, 142, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center; /* Center-align the text */
+    padding-left: 16px; /* Add some padding to the left of the text */
+    box-sizing: border-box; /* Ensure padding is included in the total width and height */
+}
+
+header ul .dropdown-content a:hover {
+    background-color: antiquewhite; /* Adjust background color on hover as needed */
+}

@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Poppins:wght@100;400;500;800&display=swap');
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+.content {
+    text-align: center;
+    color: antiquewhite;
+    position: relative;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 2;
+    padding: 50px;
+    border-radius: 30px;
+}
+
+header {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 3;
+}
+
+.logo {
+    width: 70px;
+}
+
+h1 {
+    font-size: 200px;
+}
+
+h2 {
+    font-size: 50px;
+}
+
+p {
+    text-shadow: 10rem;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: aliceblue;
+}
+
+h3 {
+    font-size: 65px;
+}
+
+/* saveus.css (linked to saveus.html) */
+
+body {
+    opacity: 0;
+    animation: fadeIn 2s ease-in-out forwards;
+    background-color: rgba(12,82,142,255);
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header{
+    position: absolute;
+    z-index: 9999;
+    padding: 0.9rem 0;
+    width: 100%;
+    top: 0;
+    left: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+header nav{
+    max-width: 2400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header ul a {
+    text-decoration: none;
+    font-weight: 600;
+    background-color: aliceblue;
+    padding: 10px 1.5rem;
+    border-radius: 25px;
+    color: rgba(12,82,142,255);
+    text-transform: uppercase;
+    font-size: 0.8;
+}
+
+header ul .dropdown {
+    position: relative;
+}
+
+header ul .dropdown .dropdown-button {
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 12px 16px; /* Adjust padding as needed */
+    border-radius: 10px; /* Adjust border radius as needed */
+    cursor: pointer;
+    position: relative;
+    z-index: 1; 
+    display: inline-block;
+}
+
+header ul .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    align-items: center;
+    align-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color as needed */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for a dropdown effect */
+    border-radius: 10px; /* Adjust border radius as needed */
+    top: 150%; /* Position the dropdown content below the button */
+    left: 0;
+    width: max-content; /* Set the width to max-content */
+    z-index: 1; /* Ensure the dropdown content is below the button */
+    box-sizing: border-box;
+}
+
+header ul .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header ul .dropdown-content a {
+    color: rgba(12, 82, 142, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: center; /* Center-align the text */
+    padding-left: 16px; /* Add some padding to the left of the text */
+    box-sizing: border-box; /* Ensure padding is included in the total width and height */
+}
+
+header ul .dropdown-content a:hover {
+    background-color: antiquewhite; /* Adjust background color on hover as needed */
+}
