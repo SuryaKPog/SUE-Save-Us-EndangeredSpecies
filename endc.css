@@ -231,20 +231,30 @@ header ul .dropdown-content a {
 header ul .dropdown-content a:hover {
     background-color: antiquewhite; /* Adjust background color on hover as needed */
 }
-/* Media Query for 1920x954 Laptop Screen */
-@media screen and (width: 1920px) and (height: 954px) {
+@media screen and (width: 1920px) and (height: 1080px) {
     .button {
-        bottom: -25rem; /* Adjust the distance from the bottom */
+        bottom: -24rem; /* Adjust the distance from the bottom */
     }
 
     header ul a {
-        font-size: 1rem; /* Adjust font size */
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    
+    main {
+        height: 90vh; /* Adjust the main container height */
     }
 }
 
-/* Media Query for 1920x1080 Screen */
-@media screen and (width: 1920px) and (height: 1080px) {
+@media screen and (width: 1024px) and (height: 600px) {
     .button {
-        bottom: -25rem;
+        bottom: -15rem;/* Adjust the distance from the bottom */
+    }
+
+    header ul a {
+        font-size: 1.2rem; /* Adjust font size */
+    }
+    
+    main {
+        height: 90vh; /* Adjust the main container height */
     }
 }
