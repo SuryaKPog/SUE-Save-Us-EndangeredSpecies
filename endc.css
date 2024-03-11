@@ -167,7 +167,7 @@ main {
 .button:hover {
     transform: translateX(-50%) translateY(-10px);
     color: white;
-    background-image: url('viddd.mp4'); /* Replace 'hover-image.jpg' with the path to your hover image */
+    background-image: url('merged.gif'); /* Replace 'hover-image.jpg' with the path to your hover image */
     background-size: cover;
 }
 
