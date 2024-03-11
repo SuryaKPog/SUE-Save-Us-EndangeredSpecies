@@ -169,3 +169,82 @@ header ul .dropdown-content a {
 header ul .dropdown-content a:hover {
     background-color: antiquewhite; /* Adjust background color on hover as needed */
 }
+
+/* Media Query for 1920x1080px Laptop Screen */
+@media screen and (width: 1920px) and (height: 1080px) {
+    h1 {
+        font-size: 100px; /* Adjust the font size of h1 */
+    }
+
+    h2 {
+        font-size: 30px; /* Adjust the font size of h2 */
+    }
+
+    p {
+        font-size: 16px; /* Adjust the font size of paragraphs */
+    }
+
+    h3 {
+        font-size: 35px; /* Adjust the font size of h3 */
+    }
+
+    .content {
+        padding: 25px; /* Adjust padding of the content */
+    }
+
+    header {
+        top: 20px; /* Adjust the distance from the top */
+        left: 20px; /* Adjust the distance from the left */
+    }
+
+    header ul a {
+        font-size: 1rem; /* Adjust font size of navigation links */
+    }
+
+    .dropdown .dropdown-button {
+        padding: 10px 14px; /* Adjust padding of dropdown button */
+    }
+
+    .dropdown-content a {
+        padding: 10px 14px; /* Adjust padding of dropdown content links */
+    }
+}
+
+@media screen and (width: 1024px) and (height: 600px) {
+    h1 {
+        font-size: 40px; /* Adjust the font size of h1 */
+    }
+
+    h2 {
+        font-size: 15px; /* Adjust the font size of h2 */
+    }
+
+    p {
+        font-size: 9px; /* Adjust the font size of paragraphs */
+    }
+
+    h3 {
+        font-size: 20px; /* Adjust the font size of h3 */
+    }
+
+    .content {
+        padding: 10px; /* Adjust padding of the content */
+    }
+
+    header {
+        top: 2px; /* Adjust the distance from the top */
+        left: 20px; /* Adjust the distance from the left */
+    }
+
+    header ul a {
+        font-size: 1rem; /* Adjust font size of navigation links */
+    }
+
+    .dropdown .dropdown-button {
+        padding: 10px 14px; /* Adjust padding of dropdown button */
+    }
+
+    .dropdown-content a {
+        padding: 10px 14px; /* Adjust padding of dropdown content links */
+    }
+}
