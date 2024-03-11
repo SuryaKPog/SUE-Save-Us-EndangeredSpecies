@@ -114,3 +114,44 @@ header nav{
     justify-content: space-between;
     align-items: center;
 }
+
+media screen and (width: 1920px) and (height: 1080px) {
+    h1 {
+        font-size: 90px; /* Adjust font size of h1 */
+    }
+
+    h2 {
+        font-size: 42px; /* Adjust font size of h2 */
+    }
+
+    p {
+        font-size: 24px; /* Adjust font size of paragraphs */
+        margin-left: px; /* Adjust margin-left of paragraphs */
+    }
+
+    .overlay-image {
+        width: 33%; /* Adjust the width of the overlay image */
+    }
+}
+
+/* Media Query for 1024x600 Resolution */
+@media screen and (width: 1024px) and (height: 600px) {
+    h1 {
+        font-size: 50px; /* Adjust font size of h1 */
+    }
+
+    h2 {
+        font-size: 30px; /* Adjust font size of h2 */
+        margin-bottom: 52px; /* Adjust margin-bottom of h2 */
+    }
+
+    p {
+        font-size: 16px; /* Adjust font size of paragraphs */
+        margin-left: 5px; /* Adjust margin-left of paragraphs */
+        padding: 20px; /* Adjust padding of paragraphs */
+    }
+
+    .overlay-image {
+        width: 25%; /* Adjust the width of the overlay image */
+    }
+}
