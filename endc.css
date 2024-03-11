@@ -258,3 +258,17 @@ header ul .dropdown-content a:hover {
         height: 90vh; /* Adjust the main container height */
     }
 }
+
+@media screen and (width: 1864px) and (height: 962px) {
+    .button {
+        bottom: -23rem;/* Adjust the distance from the bottom */
+    }
+
+    header ul a {
+        font-size: 1rem; /* Adjust font size */
+    }
+    
+    main {
+        height: 90Vh; /* Adjust the main container height */
+    }
+}
