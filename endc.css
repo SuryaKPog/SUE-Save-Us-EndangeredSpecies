@@ -1,25 +1,23 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap')
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;800&display=swap');
 
 *,
 *::before,
-*::after{
-    padding:0;
-    margin:0;
-    box-sizing:border-box;
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
-    background-color: rgba(12,82,142,255);
+    background-color: rgba(12, 82, 142, 255);
 }
 
-.logo{
+.logo {
     width: 70px;
 }
 
-header{
+header {
     position: absolute;
     z-index: 9999;
     padding: 0.9rem 0;
@@ -28,16 +26,17 @@ header{
     left: 0;
 }
 
-header nav{
+header nav {
     max-width: 2400px;
     margin: 0 auto;
     padding: 0 2rem;
-    display: flex;
+    display: grid;
+    grid-template-columns: auto-fit;
     justify-content: space-between;
     align-items: center;
 }
 
-header ul{
+header ul {
     display: flex;
     list-style: none;
     align-items: center;
@@ -49,31 +48,17 @@ header ul a {
     background-color: aliceblue;
     padding: 10px 1.5rem;
     border-radius: 25px;
-    color: rgba(12,82,142,255);
+    color: rgba(12, 82, 142, 255);
     text-transform: uppercase;
     font-size: 0.8;
 }
 
-main{
+main {
     height: 100vh;
     width: 100vw;
     overflow: hidden;
-}
-
-body {
-    margin: 0;
-    overflow: hidden;
-}
-
-.parallax.bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-    transform: translateZ(0);
+    display: grid;
+    grid-template-rows: auto-fit;
 }
 
 body {
@@ -114,7 +99,7 @@ body {
     align-items: center;
     justify-content: center;
     height: 100vh;
-    opacity: 0; 
+    opacity: 0;
 }
 
 @keyframes fadeInFromBottom {
@@ -128,13 +113,14 @@ body {
     }
 }
 
-
 body {
-    animation: fadeInFromBottom 2s ease-in-out forwards; 
+    animation: fadeInFromBottom 2s ease-in-out forwards;
 }
 
 main {
     position: relative;
+    display: grid;
+    grid-template-rows: auto-fit;
 }
 
 .parallax {
@@ -145,7 +131,7 @@ main {
     transform: translate(-50%, -50%);
     text-transform: uppercase;
     color: black;
-    white-space: nowrap; 
+    white-space: nowrap;
 }
 
 .button {
@@ -190,12 +176,12 @@ header ul .dropdown {
 }
 
 header ul .dropdown .dropdown-button {
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 12px 16px; /* Adjust padding as needed */
     border-radius: 10px; /* Adjust border radius as needed */
     cursor: pointer;
     position: relative;
-    z-index: 1; 
+    z-index: 1;
     display: inline-block;
 }
 
@@ -231,7 +217,8 @@ header ul .dropdown-content a {
 header ul .dropdown-content a:hover {
     background-color: antiquewhite; /* Adjust background color on hover as needed */
 }
-@media screen and (width: 1920px) and (height: 1080px) {
+
+@media screen and (max-width: 1920px) and (min-height: 1080px) {
     .button {
         bottom: -24rem; /* Adjust the distance from the bottom */
     }
@@ -239,13 +226,13 @@ header ul .dropdown-content a:hover {
     header ul a {
         font-size: 1.2rem; /* Adjust font size */
     }
-    
+
     main {
         height: 90vh; /* Adjust the main container height */
     }
 }
 
-@media screen and (width: 1024px) and (height: 600px) {
+@media screen and (max-width: 1024px) and (min-height: 600px) {
     .button {
         bottom: -15rem;/* Adjust the distance from the bottom */
     }
@@ -253,22 +240,9 @@ header ul .dropdown-content a:hover {
     header ul a {
         font-size: 1.2rem; /* Adjust font size */
     }
-    
+
     main {
         height: 90vh; /* Adjust the main container height */
     }
 }
 
-@media screen and (width: 1864px) and (height: 962px) {
-    .button {
-        bottom: -23rem;/* Adjust the distance from the bottom */
-    }
-
-    header ul a {
-        font-size: 1rem; /* Adjust font size */
-    }
-    
-    main {
-        height: 90Vh; /* Adjust the main container height */
-    }
-}
