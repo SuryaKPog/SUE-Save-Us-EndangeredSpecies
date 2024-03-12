@@ -231,6 +231,14 @@ header ul .dropdown-content a:hover {
     background-color: antiquewhite; /* Adjust background color on hover as needed */
 }
 
+.bg.image1 {
+    background-image: url('no-whale.png');
+}
+
+.bg.image2 {
+    background-image: url('phone.png');
+}
+
 @media screen and (width: 1920px) and (height: 1080px) {
     .button {
         bottom: -24rem; /* Adjust the distance from the bottom */
