@@ -184,8 +184,10 @@ media screen and (width: 1920px) and (height: 1080px) {
     }
     .logo{
         width:50px;
+        margin-top:-50px;
+        margin-left:-20px;
     }
 
     .first-line {
     font-size: 30px;
-}    
+}
