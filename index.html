@@ -54,6 +54,27 @@
                 }, 500);
             });
         });
+                document.addEventListener('DOMContentLoaded', function () {
+            var parallaxBg = document.querySelector('.parallax.bg');
+    
+            function updateBackgroundImage() {
+                if (window.innerWidth >= 430 && window.innerHeight >= 932) {
+                    parallaxBg.classList.add('image1');
+                    parallaxBg.classList.remove('image2');
+                } else {
+                    parallaxBg.classList.remove('image1');
+                    parallaxBg.classList.add('image2');
+                }
+            }
+    
+            // Initial call to set the background image on page load
+            updateBackgroundImage();
+    
+            // Update the background image whenever the window is resized
+            window.addEventListener('resize', updateBackgroundImage);
+        });
+    </script>
+    
     </script>
 </body>
 </html>
