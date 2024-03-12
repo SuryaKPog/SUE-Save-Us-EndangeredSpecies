@@ -258,3 +258,24 @@ header ul .dropdown-content a:hover {
         height: 90vh; /* Adjust the main container height */
     }
 }
+
+@media screen and (min-width: 412px) and (min-height: 915px) {
+    .button {
+        bottom: -20rem;
+        font-size:1rem/* Adjust the distance from the bottom */
+    }
+
+    header ul a {
+        font-size: 0.6rem;
+        /* Adjust font size */
+    }
+
+    h2{
+        font-size:15px;
+        margin-top:20%;
+    }
+    
+    main {
+        height: 90vh; /* Adjust the main container height */
+    }
+}
