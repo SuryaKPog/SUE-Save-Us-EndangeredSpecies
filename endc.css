@@ -274,10 +274,6 @@ header ul .dropdown-content a:hover {
         font-size:15px;
         margin-top:20%;
     }
-    .parallax.bg {
-        background-image: url('phone.png');
-    }
-}
     main {
         height: 90vh; /* Adjust the main container height */
     }
