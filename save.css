@@ -52,22 +52,22 @@ header {
 }
 
 h1 {
-    font-size: 200px;
+    font-size: 100px;
 }
 
 h2 {
-    font-size: 50px;
+    font-size: 25px;
 }
 
 p {
     text-shadow: 10rem;
-    font-size: 20px;
+    font-size: 15px;
     font-family: Georgia, 'Times New Roman', Times, serif;
     color: aliceblue;
 }
 
 h3 {
-    font-size: 65px;
+    font-size: 45px;
 }
 
 /* saveus.css (linked to saveus.html) */
@@ -225,45 +225,6 @@ header ul .dropdown-content a:hover {
 
     h3 {
         font-size: 20px; /* Adjust the font size of h3 */
-    }
-
-    .content {
-        padding: 10px; /* Adjust padding of the content */
-    }
-
-    header {
-        top: 2px; /* Adjust the distance from the top */
-        left: 20px; /* Adjust the distance from the left */
-    }
-
-    header ul a {
-        font-size: 1rem; /* Adjust font size of navigation links */
-    }
-
-    .dropdown .dropdown-button {
-        padding: 10px 14px; /* Adjust padding of dropdown button */
-    }
-
-    .dropdown-content a {
-        padding: 10px 14px; /* Adjust padding of dropdown content links */
-    }
-}
-
-@media screen and (width: 1864px) and (height: 962px) {
-    h1 {
-        font-size: 50px; /* Adjust the font size of h1 */
-    }
-
-    h2 {
-        font-size: 20px; /* Adjust the font size of h2 */
-    }
-
-    p {
-        font-size: 15px; /* Adjust the font size of paragraphs */
-    }
-
-    h3 {
-        font-size: 50px; /* Adjust the font size of h3 */
     }
 
     .content {
