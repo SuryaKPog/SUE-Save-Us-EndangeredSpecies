@@ -202,7 +202,7 @@ header ul .dropdown .dropdown-content {
     position: absolute;
     align-items: center;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.7); 
+    background-color: rgba(0, 0, 0, 0); 
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); 
     border-radius: 10px; 
     top: 150%; 
