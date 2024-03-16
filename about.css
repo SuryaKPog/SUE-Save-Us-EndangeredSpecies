@@ -274,7 +274,7 @@ h1{
     }
 }
 
-@media screen and (max-width:1366px)  {
+@media screen and (max-width:1281px)  {
     h1{
     text-align: center;
     color: antiquewhite;
