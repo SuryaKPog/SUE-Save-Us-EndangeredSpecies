@@ -204,7 +204,7 @@ header ul .dropdown .dropdown-content {
     position: absolute;
     align-items: center;
     align-content: center;
-    background-color: rgba(0, 0, 0, 0.7); /* Adjust background color as needed */
+    background-color: rgba(0, 0, 0, 0); /* Adjust background color as needed */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add shadow for a dropdown effect */
     border-radius: 10px; /* Adjust border radius as needed */
     top: 150%; /* Position the dropdown content below the button */
